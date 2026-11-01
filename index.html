@@ -1,1 +1,49 @@
-<!DOCTYPE html><html lang="id"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#e9fbfc"><title>Admin Portal | PG CARD</title><link rel="stylesheet" href="../assets/styles.css"></head><body><div class="ambient ambient-one"></div><div class="ambient ambient-two"></div><header class="topbar"><a class="brand" href="../"><span class="brand-mark">PG</span><span>PG <b>CARD</b><small>ADMIN PORTAL</small></span></a><a class="top-link" href="../">← Beranda</a></header><main class="auth-wrap"><section class="auth-intro"><div class="eyebrow"><span class="live-dot"></span> SECURE ADMINISTRATION</div><h1>One platform.<br><span style="color:#20a5a6">Full control.</span></h1><p>Portal administrator untuk mengelola data member, sinkronisasi data aktif, dan memantau layanan PG CARD.</p></section><section class="auth-card"><form id="adminForm"><h2>Admin sign in</h2><label for="adminUser">Username admin</label><input id="adminUser" autocomplete="username" placeholder="Username" required><label for="adminPass">Password</label><input id="adminPass" type="password" autocomplete="current-password" placeholder="Password" required><button class="primary-btn">Masuk ke Admin Portal</button><div class="status" id="adminStatus" role="status"></div><p class="form-note">Akses admin wajib diverifikasi oleh backend. Jangan menaruh username atau password admin di file HTML/JavaScript.</p></form><section id="adminDashboard" class="hidden"><div class="dash-head"><h2>Admin overview</h2><button class="logout" id="adminLogout">Keluar</button></div><div class="dash-grid"><div class="stat"><small>MEMBER AKTIF</small><strong>—</strong></div><div class="stat"><small>AKUN TERAKTIVASI</small><strong>—</strong></div><div class="stat"><small>SINKRONISASI TERAKHIR</small><strong>—</strong></div><div class="stat"><small>STATUS SISTEM</small><strong>Belum terhubung</strong></div></div><p class="form-note">Panel ini adalah kerangka UI. Hubungkan endpoint admin terproteksi sebelum digunakan.</p></section></section></main><script src="../assets/config.js"></script><script src="../assets/portal.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#e9fbfc">
+  <meta name="description" content="PG CARD Digital Platform">
+  <title>PG CARD | Digital Platform</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body class="landing-page">
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <header class="topbar">
+    <a class="brand" href="./index.html"><span class="brand-mark">PG</span><span>PG <b>CARD</b><small>DIGITAL PLATFORM</small></span></a>
+    <a class="top-link" href="customer/">Customer Portal <span>↗</span></a>
+  </header>
+  <main class="landing-shell">
+    <section class="hero-copy">
+      <div class="eyebrow"><span class="live-dot"></span> YOUR MEMBERSHIP, REIMAGINED</div>
+      <h1>More than a card.<br><span>A better experience.</span></h1>
+      <p class="lead">Nikmati kemudahan mengakses keanggotaan PG CARD dalam satu platform digital.</p>
+      <div class="portal-actions">
+        <a class="portal-card customer-card" href="customer/">
+          <span class="portal-icon">✦</span><span class="portal-label">CUSTOMER PORTAL</span>
+          <strong>Welcome back.</strong><small>Aktivasi akun atau masuk ke dashboard member.</small>
+          <span class="portal-arrow">Masuk sebagai customer <b>→</b></span>
+        </a>
+        <a class="portal-card admin-card" href="admin/">
+          <span class="portal-icon">⌘</span><span class="portal-label">ADMIN PORTAL</span>
+          <strong>Manage smarter.</strong><small>Portal pengelolaan khusus administrator.</small>
+          <span class="portal-arrow">Masuk sebagai admin <b>→</b></span>
+        </a>
+      </div>
+      <div class="landing-foot"><span>PG CARD · PAKUWON MALL SOLO BARU</span><span>WE VALUE YOUR LOYALTY</span></div>
+    </section>
+    <aside class="visual-panel">
+      <div class="glass-orbit orbit-a"></div><div class="glass-orbit orbit-b"></div>
+      <div class="floating-chip chip-one">✧ MEMBER BENEFITS</div>
+      <div class="member-card">
+        <div class="card-top"><span>PG <b>CARD</b></span><span class="card-chip">✦</span></div>
+        <div class="card-watermark">PG</div>
+        <div class="card-bottom"><div><small>DIGITAL MEMBERSHIP</small><strong>YOUR NAME HERE</strong></div><span class="card-wave">〰</span></div>
+      </div>
+      <div class="floating-chip chip-two"><span class="live-dot"></span> YOUR LOYALTY MATTERS</div>
+      <div class="visual-caption">A seamless membership experience<br>designed around you.</div>
+    </aside>
+  </main>
+</body>
+</html>
