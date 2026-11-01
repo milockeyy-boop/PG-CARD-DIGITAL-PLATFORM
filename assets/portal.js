@@ -5,8 +5,10 @@
   const api = async (path, payload) => {
     if (!cfg.API_BASE_URL) throw new Error("Backend belum dikonfigurasi. Tampilan ini belum dapat memproses akun sungguhan.");
     const res = await fetch(cfg.API_BASE_URL.replace(/\/$/,"")+path, {
-      method:"POST", headers:{"Content-Type":"application/json"}, body:JSON.stringify(payload)
-    });
+  method:"POST",
+  headers:{"Content-Type":"text/plain;charset=utf-8"},
+  body:JSON.stringify(payload)
+});
     const data = await res.json().catch(()=>({}));
     if(!res.ok) throw new Error(data.message || "Permintaan gagal diproses.");
     return data;
